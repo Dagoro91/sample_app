@@ -1,0 +1,2 @@
+module EstaticPagesHelper
+end
