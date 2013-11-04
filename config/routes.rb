@@ -1,6 +1,14 @@
 SampleApp::Application.routes.draw do
-  get "estatic_pages/home"
-  get "estatic_pages/help"
+resources :users
+
+  #get "users/new"
+  root to: 'estatic_pages#home'
+
+  get '/singup', to: 'users#new'
+
+  get '/help', to: 'estatic_pages#help'
+  get '/about', to: 'estatic_pages#about'
+  get '/contact', to: 'estatic_pages#contact'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

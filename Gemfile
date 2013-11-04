@@ -9,6 +9,9 @@ group :development do
 	gem 'sqlite3'
 end
 
+# Bootstrap
+gem 'bootstrap-sass', '2.0.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0.rc2'
 
@@ -40,7 +43,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '3.0.1'
 
 # Use unicorn as the app server
 # gem 'unicorn'
